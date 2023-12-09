@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +7,40 @@
   <title>Menu de Navegación</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 
-  <!--Menu de navegação do site -->
+<!--Menu de navegação do site -->
   <header>
     <div class="menu">
-      <img src="https://seeklogo.com/images/G/Garagem_Serigrafia-logo-DFD3E88FA0-seeklogo.com.png" alt="">
+      <img class="nav-img" src="./img/logo.png" alt="">
       <nav class="scro">
-        <ul>
-          <li><a id="home" href="#home">Home</a></li>
-          <li><a id="sobre" href="#sobre">Sobre</a></li>
-          <li><a id="contato" href="#contato">Contato</a></li>
-          <li><a href="#">Entrar</a></li>
-        </ul>
+          <ul>
+            <li><a id="home"href="#home">Home</a></li>
+            <li><a id="sobre" href="#sobre">Sobre</a></li>
+            <li><a id="contato" href="#contato">Contato</a></li>
+            <li><a href="#">Entrar</a></li>
+          </ul>
       </nav>
     </div>
   </header>
-
-    <div class="slider">
+  <div class="slider">
+      <div class="slides">
       <!--radio buttons-->
-      <div class="slides" name="radio-btn" id="radio1"></div>
-      <div class="slides" name="radio-btn" id="radio2"></div>
-      <div class="slides" name="radio-btn" id="radio3"></div>
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+
       <!--FIM radio buttons-->
 
       <!--Slide Imagens-->
-      <div class="slide-first">
-        <img src="https://ovicio.com.br/wp-content/uploads/2023/06/20230628-ovicio-jujutsu-kaisen-2a-temporada-artes.jpg" alt="Imagem 1">
+      <div class="slide first">
+        <img src="./img/1.jpg" alt="Imagem 1">
       </div>
-      <div class="slide-first">
+      <div class="slide">
         <img src="./img/2.jpeg" alt="Imagem 2">
       </div>
-      <div class="slide-first">
+      <div class="slide">
         <img src="./img/3.jpeg" alt="Imagem 3">
       </div>
       <!--FIM Slide Imagens-->
@@ -54,13 +53,19 @@
       </div>
       <!--FIM Nav Auto-->
     </div>
+    
 
     <div class="manual-navigation">
       <label for="radio1" class="manual-btn"></label>
       <label for="radio2" class="manual-btn"></label>
       <label for="radio3" class="manual-btn"></label>
-
   </div>
+</div>
+<div class="preco-block">
+
+
+</div>
+
 
 
   <script src="script.js"></script>

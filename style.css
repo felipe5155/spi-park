@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #292929;
+  background: black;
   font-family: 'calibri';
 }
 
@@ -15,7 +15,8 @@ header {
   clear: both;
   content:'';
   display: table;
-  position: fixed;
+  margin-bottom: 15px;
+  position: relative;
 }
 
 .menu {
@@ -23,11 +24,12 @@ header {
   margin: 0 auto;
 }
 
-img {
+.nav-img {
   width: 169px;
   height: 78px;
   float: left;
   padding: 6px
+
 }
 
 nav {
@@ -87,6 +89,7 @@ nav ul li a:hover::before {
 .slide{
   width: 25%;
   position: relative;
+  transition: 2s;
 }
 .slide img{
   width: 800px;
@@ -105,7 +108,7 @@ nav ul li a:hover::before {
   cursor: pointer;
   transition: 1s;
 }
-.manual-btn:nth-(:last-child){
+.manual-btn:not(:last-child){
  margin-right: 40px; 
 }
 .manual-btn:hover{
@@ -121,3 +124,38 @@ nav ul li a:hover::before {
 #radio3:checked~.first{
   margin-left: -50%;
 }
+.navigation-auto div{
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: white;
+}
+.preco-block{
+  border: 14px solid #F4FE39;
+  border-radius: 40px 0px 40px 0px;
+  background-color: white;
+  height: 450px;
+  margin: 15px;
+}
+
+

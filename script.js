@@ -28,3 +28,21 @@ contato.addEventListener('click', () => {
         behavior: "smooth",
       });
 });
+
+//Transição do carrossel do Slide da pagina
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval( function(){
+nextImage();
+},3000)
+
+function nextImage(){
+    count++;
+    if(count>4){
+        count =1;
+    }
+    document.getElementById("radio"+count).checked = true;
+}
+
+console.log("Hello World");
